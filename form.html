@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTrack</title>
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: black;
+            color: aliceblue;
+        }
+        .menubar
+        {
+            display: inline-flex;
+            background-color: red;
+            width: 100%;
+            height: fit-content;
+        }
+        .menubar, a
+        {
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            justify-content: space-between;
+            padding:10px ;
+            margin: 10px auto;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .active
+        {
+            background-color: black;
+            border-radius: 20%;
+            
+        }
+        .active:hover{
+            background-color: red;
+        }
+        .real:hover
+        {
+            background-color: black;
+            border-radius: 20%;
+        }
+        legend
+        {
+            text-align: center;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top:34px;
+            padding-bottom: 10px;
+
+        }
+        span
+        {
+            color: red;
+        }
+        span:hover{
+            color: blue;
+        }
+        input[type="text"]
+        {
+            border-radius: 10%;
+            background: transparent;
+            outline: none;
+            color: white;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid white;
+            
+        }
+        input[type="email"]
+        {
+            border-radius: 10%;
+            background: transparent;
+            outline: none;
+            color: white;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid white;
+            
+        }
+         input[type="number"]
+        {
+            border-radius: 10%;
+            background: transparent;
+            outline: none;
+            color: white;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid white;
+            
+        }
+        input[type="submit"]
+        {
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            border-radius:20%;
+            text-align: center;
+            width: fit-content;
+        }
+        input[type="submit"]:hover
+        {
+            background-color: blue;
+            cursor: progress;
+        }
+        form{
+            cursor: pointer;
+            font-size:15px;
+        }   
+        .wallpaper
+        {
+            cursor: pointer;
+        }
+        footer
+        {
+            padding:40px;
+            text-align: center;
+        }
+        fieldset
+        {
+            margin: 40px auto;
+            width: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <a href="#" target="_self" class="active">Home</a>
+        <a href="#" target="_self" class="real">Contacts</a>
+        <a href="#" target="_self" class="real">Platforms</a>
+        <a href="#" target="_self" class="real">About us</a>
+    </div>
+    <div class="wallpaper">
+        <marquee direction="right" scrollamt="fast">ProfTronics <span>0790470781</span></marquee>
+        <form method="post" action="submit_feedback.php">
+            <fieldset>
+                <legend>Feed<span>back</span></legend>
+                <pre>
+                    Enter Your Name:  <input type="text" name="name" placeholder="Enter your name"><br>
+                   Enter Your Email:  <input type="email" name="email" placeholder="Input Valid Email"><br>
+                       Any Feedback?  <input type="text" name="feedback" placeholder="feedback"><br>
+                            Ratings:  <input type="number" name="rating" placeholder="Rate on a scale of 1-10" min="1" max="10"><br>
+                                             <input type="submit" name="submit" value="Upload">
+                </pre>
+            </fieldset>
+        </form>
+    </div>
+    <footer>Zetech university</footer>
+</body>
+</html>
